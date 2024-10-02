@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.ControleMotDePasse"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.MotDePasseSecure", "Boucles.MotDePasseSecure\Boucles.MotDePasseSecure.csproj", "{874D1666-3456-4B37-864D-DADEF31B148C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.MotDePasseAnssi", "Boucles.MotDePasseAnssi\Boucles.MotDePasseAnssi.csproj", "{E76ACB88-1D87-4C5B-A1FE-F4E377D38E31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{874D1666-3456-4B37-864D-DADEF31B148C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{874D1666-3456-4B37-864D-DADEF31B148C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{874D1666-3456-4B37-864D-DADEF31B148C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76ACB88-1D87-4C5B-A1FE-F4E377D38E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76ACB88-1D87-4C5B-A1FE-F4E377D38E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76ACB88-1D87-4C5B-A1FE-F4E377D38E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76ACB88-1D87-4C5B-A1FE-F4E377D38E31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
