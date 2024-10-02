@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesCapitales", "LesCapitale
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.ControleSaisie", "Boucles.ControleSaisie\Boucles.ControleSaisie.csproj", "{A1E43395-AA0C-41E8-AFE2-748B3E055B15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.ControleMotDePasse", "Boucles.ControleMotDePasse\Boucles.ControleMotDePasse.csproj", "{8CF1FDE2-A127-4FAA-9921-BD768EEEECFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boucles.MotDePasseSecure", "Boucles.MotDePasseSecure\Boucles.MotDePasseSecure.csproj", "{874D1666-3456-4B37-864D-DADEF31B148C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{A1E43395-AA0C-41E8-AFE2-748B3E055B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E43395-AA0C-41E8-AFE2-748B3E055B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E43395-AA0C-41E8-AFE2-748B3E055B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF1FDE2-A127-4FAA-9921-BD768EEEECFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF1FDE2-A127-4FAA-9921-BD768EEEECFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF1FDE2-A127-4FAA-9921-BD768EEEECFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF1FDE2-A127-4FAA-9921-BD768EEEECFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874D1666-3456-4B37-864D-DADEF31B148C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874D1666-3456-4B37-864D-DADEF31B148C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874D1666-3456-4B37-864D-DADEF31B148C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874D1666-3456-4B37-864D-DADEF31B148C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
