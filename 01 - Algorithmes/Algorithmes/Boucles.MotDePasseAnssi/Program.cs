@@ -38,5 +38,6 @@ internal class Program
         {
             Console.WriteLine("Mot de passe trop faible !");
         }
+
     }
 }

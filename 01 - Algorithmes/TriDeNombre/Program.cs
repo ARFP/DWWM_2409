@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using MdevoldereTools;
+
 Console.WriteLine("Tri de Nombres ++");
 
 // VARIABLES
@@ -7,21 +10,12 @@ int numA;
 int numB;
 int numC;
 int[] nombres;
-string saisieUtilisateur;
 
 // TRAITEMENT
 
-Console.WriteLine("Entrez le premier nombre");
-saisieUtilisateur = Console.ReadLine(); // Récupération d'une saisie utilisateur
-numA = int.Parse(saisieUtilisateur); // Conversion de la saisie en nombre entier
-
-Console.WriteLine("Entrez le deuxième nombre");
-saisieUtilisateur = Console.ReadLine();
-numB = int.Parse(saisieUtilisateur);
-
-Console.WriteLine("Entrez le troisième nombre");
-saisieUtilisateur = Console.ReadLine();
-numC = int.Parse(saisieUtilisateur);
+numA = ConsoleTools.DemanderNombreEntier("Entrez le premier nombre");
+numB = ConsoleTools.DemanderNombreEntier("Entrez le deuxième nombre");
+numC = ConsoleTools.DemanderNombreEntier("Entrez le troisième nombre");
 
 nombres = [numA, numB, numC];
 

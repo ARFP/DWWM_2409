@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Algorithmes\MdevoldereTools\MdevoldereTools.csproj" />
-  </ItemGroup>
-
 </Project>
