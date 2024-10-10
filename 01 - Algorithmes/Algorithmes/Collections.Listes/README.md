@@ -57,4 +57,4 @@ Au démarrage, il n'y a aucun utilisateur enregistré.
 		- Afficher tous les utilisateurs enregistrés en respectant ce format :
 		- Nom Prénom - Date de naissance (âge) - Métier/Couleur préférée
 
-6. Le prgramme remercie l'utilisateur et se termine
+6. Le programme remercie l'utilisateur et se termine

@@ -16,6 +16,9 @@ Au démarrage, il n'y a aucun utilisateur enregistré.
 4. Le programme se termine
 */
 
+using System.Collections;
+using System.Linq;
+
 namespace Collections.Listes
 {
     internal class Program
@@ -24,36 +27,54 @@ namespace Collections.Listes
         {
             Console.WriteLine("Enregistrement de nouveaux utilisateurs");
 
-            string[] utilisateurs;
-            
+            List<string> utilisateurs = new List<string>(); // Liste fortement typée
+
+            utilisateurs.Add("Tata"); // Add = Augmente la taille de la collection de 1 et ajoute l'élément à la fin de la collection 
+            utilisateurs.Add("Toto2");
+
+            utilisateurs.AddRange(["toto3", "toto4"]);
+
+            utilisateurs.Insert(2, "Titi");
+
+            utilisateurs.InsertRange(1, ["Tata", "Tutu"]);
+
+            utilisateurs.Prepend("Riri"); // ajout au début
+            utilisateurs.Append("Fifi"); // ajout a la fin
+
+            utilisateurs.Remove("Tata");
+
+            utilisateurs.RemoveAll(chaine => chaine == "Tata");
+
+
+
             string saisieNomPrenom;
             
-            char saisieOuiNon;
-
-            string[] tabTempo;
-            
-            utilisateurs = new string[1] { "Allan Vitu" };
-                   
+            char saisieOuiNon;                   
 
             do
             {
                 Console.WriteLine("Saisissez votre nom et prénom : ");
                 
                 saisieNomPrenom = Console.ReadLine() ?? "";
-
-                tabTempo = utilisateurs;
+                                
+                utilisateurs.Add(saisieNomPrenom);
                 
-                utilisateurs = new string[utilisateurs.Length + 1];
-                
-                tabTempo.CopyTo(utilisateurs, 0);
-
-                utilisateurs[utilisateurs.Length - 1] = saisieNomPrenom;
 
                 Console.WriteLine("Souhaitez vous ajouter un autre utilisateur ? (N/O)");
 
-                saisieOuiNon = Console.ReadKey().KeyChar;
+                saisieOuiNon = Console.ReadKey(true).KeyChar;
             }
             while (saisieOuiNon == 'o' || saisieOuiNon == 'O');
+
+            for(int i = 0; i < utilisateurs.Count; i++)
+            {
+                Console.WriteLine(utilisateurs[i]);
+            }
+
+            foreach(string personne in utilisateurs)
+            {
+                Console.WriteLine(personne);
+            }
 
 
         }
