@@ -36,8 +36,16 @@ namespace Users.ConsoleApp.Objects
                 throw new ArgumentException("La date doit être dans le passé !");
             }
 
-            //
+        }
 
+        public void SetMetier(string _valeur)
+        {
+            this.metier = _valeur;
+        }
+
+        public void SetCouleurPreferee(string _valeur)
+        {
+            this.couleurPreferee = _valeur;
         }
 
         public string GetNomComplet()
@@ -60,14 +68,27 @@ namespace Users.ConsoleApp.Objects
 
         public bool IsMajeur()
         {
-            int age = this.GetAge();
-
-            return age > 18;
+            return this.GetAge() > 18;
         }
 
-        public string GetCouleurOuMetier()
+        public string? GetCouleurOuMetier()
         {
-            return "";
+            if(metier == null && couleurPreferee == null)
+            {
+                throw new Exception("Le métier ou la couleur préférée doivent être renseignés !");
+            }
+
+
+            if(this.IsMajeur())
+            {
+                return this.metier;
+            } 
+            else
+            {
+                return this.couleurPreferee;
+            }
+
+            //return this.IsMajeur() ? this.metier : this.couleurPreferee;
         }
     }
 }
