@@ -20,35 +20,54 @@ namespace Users.ConsoleApp.Objects
         private string? couleurPreferee;
 
 
-        public Utilisateur()
+        public Utilisateur(string _nomPrenom, string _dateDeNaissance)
         {
+            string[] nomPrenomSepare = _nomPrenom.Split(" ");
+            this.nom = nomPrenomSepare[0];
+            this.prenom = nomPrenomSepare[1];
+
+            if(!DateTime.TryParse(_dateDeNaissance, out dateDeNaissance))
+            {
+                throw new ArgumentException("Date de naissance invalide !");
+            }
+
+            if(dateDeNaissance > DateTime.Now)
+            {
+                throw new ArgumentException("La date doit être dans le passé !");
+            }
+
+            //
 
         }
 
+        public string GetNomComplet()
+        {
+            return nom + " " + prenom;
+        }
+
+
+        public string GetDateDeNaissance()
+        {
+            return dateDeNaissance.ToShortDateString();
+        }
 
         public int GetAge()
         {
-            return 0;
+            TimeSpan intervalle = DateTime.Now - dateDeNaissance;
+            int age = (int)(intervalle.Days / 365.25);
+            return age;
         }
 
         public bool IsMajeur()
         {
-            return false;
+            int age = this.GetAge();
+
+            return age > 18;
         }
 
         public string GetCouleurOuMetier()
         {
             return "";
-        }
-
-        public string GetDateDeNaissance()
-        {
-            return "";
-        }
-
-        public string GetNomComplet()
-        {
-            return prenom + " " + nom;
         }
     }
 }
