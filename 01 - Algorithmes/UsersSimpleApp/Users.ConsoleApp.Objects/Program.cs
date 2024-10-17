@@ -17,7 +17,7 @@ namespace Users.ConsoleApp.Objects
 
             //Traitement
             do
-            {             
+            {
 
                 try
                 {
@@ -29,12 +29,12 @@ namespace Users.ConsoleApp.Objects
 
                     Utilisateur unUtilisateur = new Utilisateur(saisieNomPrenom, saisieDate);
 
-                    if(unUtilisateur.IsMajeur())
+                    if (unUtilisateur.IsMajeur())
                     {
                         Console.WriteLine("Votre metier ?");
                         metierCouleur = Console.ReadLine();
                         unUtilisateur.SetMetier(metierCouleur);
-                    } 
+                    }
                     else
                     {
                         Console.WriteLine("couleur préféré ?");
@@ -45,7 +45,7 @@ namespace Users.ConsoleApp.Objects
 
                     utilisateurs.Add(unUtilisateur);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
@@ -65,8 +65,8 @@ namespace Users.ConsoleApp.Objects
                 Console.Write("Nom et Prénom : " + utilisateur.GetNomComplet() + " - ");
 
                 Console.Write(
-                    "Date de naissance (âge): " + 
-                    utilisateur.GetDateDeNaissance() + 
+                    "Date de naissance (âge): " +
+                    utilisateur.GetDateDeNaissance() +
                     " (" + utilisateur.GetAge() + ") - "
                     );
 
@@ -87,5 +87,6 @@ namespace Users.ConsoleApp.Objects
                     resultat.Add(u);
                 }
             }*/
+        }
     }
 }

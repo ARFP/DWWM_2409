@@ -8,10 +8,10 @@ namespace Users.ConsoleApp.Objects
     public class Utilisateur
     {
         //private Guid id;
-        
-        private string nom;
 
-        private string prenom;
+        public string nom;
+
+        public string prenom;
 
         private DateTime dateDeNaissance;
 
@@ -19,6 +19,7 @@ namespace Users.ConsoleApp.Objects
 
         private string? couleurPreferee;
 
+        public Utilisateur() { }
 
         public Utilisateur(string _nomPrenom, string _dateDeNaissance)
         {
