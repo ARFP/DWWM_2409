@@ -54,7 +54,7 @@ let nouveauPays = {
 
 ### Partie 2 : Charger et exploiter un objet 
 
-Dans le fichier "**assets/2-gerer-objet.js**", exploiter les données de l'objet stocké dans la variable `laFrance` et les afficher dans une balise `<article>` dans le **main** de la page "**2-gerer-objet.html**". 
+Dans le fichier "**assets/2-gerer-objet.js**", exploiter les données de l'objet stocké dans la variable `laFrance` et les afficher dans une balise `<article>` dans le `<main>` de la page "**2-gerer-objet.html**". 
 
 **Résultat attendu :** 
 
