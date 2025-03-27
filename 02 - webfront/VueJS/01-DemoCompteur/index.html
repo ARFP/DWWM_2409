@@ -8,10 +8,11 @@
     <title>Compteur de clics</title>
 </head>
 <body>
+    <h1>Compteur de clics</h1>
     <div id="app">
-        <h1>Compteur de clics</h1>
-        <button>Ajouter 1</button> <button>Réinitialiser</button>
-        <p>Vous avez cliqué: 0 fois</p>
+        <button @click="incrementer">Ajouter 1</button> 
+        <button @click="reinitialiser">Réinitialiser</button>
+        <p>Vous avez cliqué: {{ nbClics }} fois</p>
     </div>
 </body>
 </html>

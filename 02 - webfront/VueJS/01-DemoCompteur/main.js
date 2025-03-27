@@ -5,3 +5,21 @@
  * Exercice "Compteur de clics" VueJS
  * https://arfp.github.io/tp/web/javascript/01-intro/
  */
+
+const myApp = {
+    data() {
+        return {
+            nbClics: 0
+        }
+    },
+    methods: {
+        incrementer() {
+            this.nbClics++;
+        },
+        reinitialiser() {
+            this.nbClics = 0;
+        }
+    }
+}
+
+Vue.createApp(myApp).mount('#app');

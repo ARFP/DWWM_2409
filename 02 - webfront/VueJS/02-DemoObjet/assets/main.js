@@ -7,3 +7,28 @@
  */
 
 import { myEmployee } from './Employee.js';
+
+const myApp = {
+    data() {
+        return {
+            employee: myEmployee,
+            newSalary: myEmployee.salary
+        }
+    },
+    computed: {
+        email() {
+            return this.employee.firstname + '.' + this.employee.lastname + '@example.com';
+        }
+    },
+    methods: {
+        save() {
+            if(this.newSalary > this.employee.salary) {
+                this.employee.salary = this.newSalary;
+            } else {
+                alert('Le nouveau salaire doit être supérieur au salaire actuel');
+            }
+        }
+    }
+}
+
+Vue.createApp(myApp).mount('#app');
