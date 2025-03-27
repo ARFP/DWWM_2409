@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS minifaq;
+DROP DATABASE IF EXISTS mini_faq;
 
 CREATE DATABASE mini_faq;
 
